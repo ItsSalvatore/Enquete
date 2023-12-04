@@ -1,0 +1,191 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+
+
+
+
+
+    <div class="container_questions">
+        <form action="/submit_question" method="post">
+
+
+    <div class="questions_meting">
+
+        <label class="question_name">Wat zou u ervan vinden als u kunt filteren op onderhoudsvriendelijkheid ?</label>
+        <label>Ik vind het fijn</label>
+        <input name="question_1" type="radio" value="ik vind het fijn">
+        <label>Ik verwacht het</label>
+        <input name="question_1" type="radio" value="ik verwacht dit">
+        <label>Het maakt mij niet uit</label>
+        <input name="question_1" type="radio" value="maakt niet uit">
+        <label>Ik taloreer het</label>
+        <input name="question_1" type="radio" value="ik taloreer het">
+        <label>Ik vind het niet fijn</label>
+        <input name="question_1" type="radio" value="ik vind het niet fijn">
+                    
+     </div> 
+     <div class="questions_meting">
+
+        <label class="question_name">Wat zou u ervan vinden als er geen filter functie is voor onderhoudsvriendelijkheid ? </label>
+        <label>Ik vind het fijn</label>
+        <input name="question_2" type="radio" value="ik vind het fijn">
+        <label>Ik verwacht het</label>
+        <input name="question_2" type="radio" value="ik verwacht dit">
+        <label>Het maakt mij niet uit</label>
+        <input name="question_2" type="radio" value="maakt niet uit">
+        <label>Ik taloreer het</label>
+        <input name="question_2" type="radio" value="ik taloreer het">
+        <label>Ik vind het niet fijn</label>
+        <input name="question_2" type="radio" value="ik vind het niet fijn">
+                    
+     </div> 
+     <div class="questions_meting">
+
+        <label class="question_name">Hoe zou u het vinden als u kunt filteren op huisstijl (denk hierbij aan klassiek/modern) ?</label>
+        <label>Ik vind het fijn</label>
+        <input name="question_3" type="radio" value="ik vind het fijn">
+        <label>Ik verwacht het</label>
+        <input name="question_3" type="radio" value="ik verwacht dit">
+        <label>Het maakt mij niet uit</label>
+        <input name="question_3" type="radio" value="maakt niet uit">
+        <label>Ik taloreer het</label>
+        <input name="question_3" type="radio" value="ik taloreer het">
+        <label>Ik vind het niet fijn</label>
+        <input name="question_3" type="radio" value="ik vind het niet fijn">
+                    
+     </div> 
+     <div class="questions_meting">
+
+        <label class="question_name">Wat zou u ervan vinden als de functie huisstijl ontbreekt in de filter functie ?</label>
+        <label>Ik vind het fijn</label>
+        <input name="question_4" type="radio" value="ik vind het fijn">
+        <label>Ik verwacht het</label>
+        <input name="question_4" type="radio" value="ik verwacht dit">
+        <label>Het maakt mij niet uit</label>
+        <input name="question_4" type="radio" value="maakt niet uit">
+        <label>Ik taloreer het</label>
+        <input name="question_4" type="radio" value="ik taloreer het">
+        <label>Ik vind het niet fijn</label>
+        <input name="question_4" type="radio" value="ik vind het niet fijn">
+                    
+     </div> 
+     <div class="questions_meting">
+
+        <label class="question_name">Hoe zou u het vinden als u kan filteren op duurzaamheid ?</label>
+        <label>Ik vind het fijn</label>
+        <input name="question_5" type="radio" value="ik vind het fijn">
+        <label>Ik verwacht het</label>
+        <input name="question_5" type="radio" value="ik verwacht dit">
+        <label>Het maakt mij niet uit</label>
+        <input name="question_5" type="radio" value="maakt niet uit">
+        <label>Ik taloreer het</label>
+        <input name="question_5" type="radio" value="ik taloreer het">
+        <label>Ik vind het niet fijn</label>
+        <input name="question_5" type="radio" value="ik vind het niet fijn">
+                    
+     </div> 
+     <div class="questions_meting">
+
+        <label class="question_name">Wat vindt u ervan als u niet kan filteren op duurzaamheid ?</label>
+        <label>Ik vind het fijn</label>
+        <input name="question_6" type="radio" value="ik vind het fijn">
+        <label>Ik verwacht het</label>
+        <input name="question_6" type="radio" value="ik verwacht dit">
+        <label>Het maakt mij niet uit</label>
+        <input name="question_6" type="radio" value="maakt niet uit">
+        <label>Ik taloreer het</label>
+        <input name="question_6" type="radio" value="ik taloreer het">
+        <label>Ik vind het niet fijn</label>
+        <input name="question_6" type="radio" value="ik vind het niet fijn">
+                    
+     </div> 
+     <div class="questions_meting">
+
+        <label class="question_name">Als er in de filter functie een prijsklasse zit inbegrepen wat zou u er dan van vinden ?</label>
+        <label>Ik vind het fijn</label>
+        <input name="question_7" type="radio" value="ik vind het fijn">
+        <label>Ik verwacht het</label>
+        <input name="question_7" type="radio" value="ik verwacht dit">
+        <label>Het maakt mij niet uit</label>
+        <input name="question_7" type="radio" value="maakt niet uit">
+        <label>Ik taloreer het</label>
+        <input name="question_7" type="radio" value="ik taloreer het">
+        <label>Ik vind het niet fijn</label>
+        <input name="question_7" type="radio" value="ik vind het niet fijn">
+                    
+     </div> 
+     <div class="questions_meting">
+
+        <label class="question_name">Als er in de filter functie GEEN prijsklasse zit inbegrepen wat zou u er dan van vinden ? </label>
+        <label>Ik vind het fijn</label>
+        <input name="question_8" type="radio" value="ik vind het fijn">
+        <label>Ik verwacht het</label>
+        <input name="question_8" type="radio" value="ik verwacht dit">
+        <label>Het maakt mij niet uit</label>
+        <input name="question_8" type="radio" value="maakt niet uit">
+        <label>Ik taloreer het</label>
+        <input name="question_8" type="radio" value="ik taloreer het">
+        <label>Ik vind het niet fijn</label>
+        <input name="question_8" type="radio" value="ik vind het niet fijn">
+                    
+     </div> 
+     <div class="questions_meting">
+
+        <label class="question_name">Wat vindt u ervan als er een functie afmetingen in de filter functie zit inbegrepen ?</label>
+        <label>Ik vind het fijn</label>
+        <input name="question_9" type="radio" value="ik vind het fijn">
+        <label>Ik verwacht het</label>
+        <input name="question_9" type="radio" value="ik verwacht dit">
+        <label>Het maakt mij niet uit</label>
+        <input name="question_9" type="radio" value="maakt niet uit">
+        <label>Ik taloreer het</label>
+        <input name="question_9" type="radio" value="ik taloreer het">
+        <label>Ik vind het niet fijn</label>
+        <input name="question_9" type="radio" value="ik vind het niet fijn">
+                    
+     </div> 
+     <div class="questions_meting">
+
+        <label class="question_name">Wat vindt u ervan als u niet kunt filteren op afmetingen ?</label>
+        <label>Ik vind het fijn</label>
+        <input name="question_10" type="radio" value="ik vind het fijn">
+        <label>Ik verwacht het</label>
+        <input name="question_10" type="radio" value="ik verwacht dit">
+        <label>Het maakt mij niet uit</label>
+        <input name="question_10" type="radio" value="maakt niet uit">
+        <label>Ik taloreer het</label>
+        <input name="question_10" type="radio" value="ik taloreer het">
+        <label>Ik vind het niet fijn</label>
+        <input name="question_10" type="radio" value="ik vind het niet fijn">
+                    
+     </div> 
+
+      <div class="questions_meting">
+      <label>Wat zou uw zelf nog in de filter functie willen zien waardoor we u klanttevredenheid kunnen bevorderen ?</label>
+      <label>Niets meer</label>
+      <input name="question_11" type="radio" value="niets meer">
+      <input class="input_vraag" type="text" name="question_11" placeholder="typ hier uw antwoord">
+    </div>
+     <a href="{{ url_for('submit_question') }}">
+        <button type="submit">Verzenden</button>
+        </a>
+
+    </div>
+
+       <!-- code flash melding -->
+   {% with messages = get_flashed_messages() %}
+   {% if messages %}
+       <ul class="messages">
+           {% for message in messages %}
+               <li>{{ message }}</li>
+           {% endfor %}
+       </ul>
+   {% endif %}
+{% endwith %}
+
+{% endblock %}
