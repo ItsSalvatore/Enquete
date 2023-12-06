@@ -1,5 +1,7 @@
+
 from flask import Flask, render_template, url_for, redirect, app, config, flash
 from flask_sqlalchemy import SQLAlchemy
+import os
 
 
 
@@ -45,8 +47,8 @@ class Question_dotshop(db.Model):
      def __repr__(self):
           return f'Response {self.name}'
      
-     @app.route("/submit_question", methods=["POST"])
-     def submit_question():
+@app.route("/submit_question", methods=["POST"]) 
+def submit_question():
        
         question_1 = request.form['question_1']
         question_2 = request.form['question_2']
@@ -75,6 +77,7 @@ class Question_dotshop(db.Model):
 @app.route("/question_dotshop")
 def question_dotshop():
     return render_template("question.html")
+    
     
 
 
