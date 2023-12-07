@@ -5,7 +5,11 @@ app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = "mysql+pymysql://helmerc:6h7%23e61CfWEFl#@oege.ie.hva.nl/zhelmerc"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SECRET_KEY'] = 'sdjhdjhsnkdnkdsnkshuhuhnn'
-app.config['SQLALCHEMY_ENGINE_OPTIONS'] = {'connect_args': {'ssl': {'fake_flag_to_enable_tls': True}}}
+app.config['SQLALCHEMY_ENGINE_OPTIONS'] = {
+         'pool_recycle': 280,
+         'pool_pre_ping': True,
+         'connect_args' : {'ssl': {'fake_flag_to_enable_tls': True}}
+     }
 db = SQLAlchemy(app)
 
 class Question_dotshop(db.Model):
