@@ -61,5 +61,5 @@ def question_dotshop():
     return render_template("question.html")
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=80)
-
+    # Change the host and port for production deployment
+    app.run(host='0.0.0.0', port=80, debug=False)
